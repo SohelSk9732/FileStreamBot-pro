@@ -34,7 +34,7 @@ else:
 
             
             
-@StreamBot.on_message((filters.command("start") | filters.regex('Sᴛᴀʀᴛ⚡️')) & filters.private )
+@StreamBot.on_message((filters.command("start") | filters.regex('🌀Sᴛᴀʀᴛ')) & filters.private )
 async def start(b, m):
     if not await db.is_user_exist(m.from_user.id):
         await db.add_user(m.from_user.id)
@@ -127,8 +127,8 @@ async def help_handler(bot, message):
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("💁‍♂️ Owner", url="https://github.com/Abidbaig177")],
-                [InlineKeyboardButton("💥 Source Code", url="https://github.com/Abidbaig177/Filestreambot-pro")]
+                [InlineKeyboardButton("💁‍♂️ Owner", url="https://t.me/Archie_Bots")],
+                [InlineKeyboardButton("💥 Source Code", url="https://t.me/Archie_Bots")]
             ]
         )
     )
