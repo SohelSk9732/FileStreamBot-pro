@@ -1,9 +1,2 @@
 #!/bin/bash
-
-hugo
-
-git add .
-
-git commit -m "Updates"
-
-git push
+gunicorn app:app & python -m Adarsh
